@@ -6,13 +6,24 @@ baseCommand: tool_command
 
 inputs:
 
-  run_tools: ../../resources/run_tools/schemas.yaml#run_tools
-
   input_one:
     type: string
     inputBinding:
       prefix: --input_one
-
+      
+  input_two_with_default:
+    type: string?
+    default: this_is_a_default
+    inputBinding:
+      prefix: --input_two
+      
+  input_three_with_default_expression:
+    type: string?
+    default:
+      valueFrom: $('this_is_a_default')
+    inputBinding:
+      prefix: --input_two
+    
 outputs:
 
   output_one:
