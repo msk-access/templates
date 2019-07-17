@@ -2,7 +2,7 @@ cwlVersion: v1.0
 
 class: CommandLineTool
 
-baseCommand: input_one_command
+baseCommand: tool_command
 
 inputs:
 
