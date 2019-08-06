@@ -17,7 +17,7 @@ inputs:
   ##
   # A simple input, bound to command line @ the first position after the baseCommand
   ##
-  input_one:
+  input_one_with_position:
     type: string
     inputBinding:
       position: 0
@@ -54,7 +54,7 @@ outputs:
   ##
   # Optional output of type File
   ##
-  output_one:
+  output_one_optional:
     type: File?
     outputBinding:
       glob: 'output_one.txt'
